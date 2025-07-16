@@ -19,7 +19,7 @@ A simple command-line sweet shop management system built with Python using Test-
 
 - Python 3.x
 - Pytest (for testing)
-
+- also use react.js for faster and optimal use of code (means if python code not exist then also react will work)
 ---
 
 ## 🚀 Setup & Run
