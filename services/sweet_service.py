@@ -5,10 +5,10 @@ class SweetService:
     def __init__(self):
         self.sweets: List[Sweet] = []
 
-    def add_sweet(self, sweet: Sweet):
-        if any(s.id == sweet.id for s in self.sweets):
-            raise ValueError("Sweet with this ID already exists.")
+    def add_sweet(self, name, category, price, quantity):
+        sweet = Sweet(name, category, price, quantity)
         self.sweets.append(sweet)
+        return sweet
 
     def delete_sweet(self, sweet_id: int):
         self.sweets = [s for s in self.sweets if s.id != sweet_id]
